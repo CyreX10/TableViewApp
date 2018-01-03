@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GlobalLogic-Logo-Gray" highlightedImage="GlobalLogic-Logo-Gray" translatesAutoresizingMaskIntoConstraints="NO" id="9kw-GA-eBj">
+                                <rect key="frame" x="0.0" y="170" width="375" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9kw-GA-eBj" secondAttribute="height" multiplier="375:107" id="Vwb-zO-h2x"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GLorange" highlightedImage="GLorange" translatesAutoresizingMaskIntoConstraints="NO" id="u2c-wC-u3d">
+                                <rect key="frame" x="121" y="407" width="133" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="u2c-wC-u3d" secondAttribute="height" multiplier="19:32" id="tMQ-rf-on3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95289999999999997" green="0.44308558819999999" blue="0.21564127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u2c-wC-u3d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="HhJ-rs-uvU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u2c-wC-u3d" secondAttribute="trailing" constant="121" id="TnW-Ga-WTn"/>
+                            <constraint firstItem="9kw-GA-eBj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ybp-cV-e9f"/>
+                            <constraint firstItem="u2c-wC-u3d" firstAttribute="top" secondItem="9kw-GA-eBj" secondAttribute="bottom" constant="130" id="dWK-Sp-gle"/>
+                            <constraint firstItem="9kw-GA-eBj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="qU9-97-lxO"/>
+                            <constraint firstItem="9kw-GA-eBj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sTw-9V-PNs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-292" y="69.715142428785612"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GLorange" width="224" height="224"/>
+        <image name="GlobalLogic-Logo-Gray" width="521" height="167"/>
+    </resources>
+</document>
