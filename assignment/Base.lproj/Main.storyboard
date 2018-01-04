@@ -31,58 +31,65 @@
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="ucR-g0-fP4"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zK-WN-gqB">
-                                <rect key="frame" x="16" y="365" width="343" height="100"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.65817636989999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="WT3-I0-3yW"/>
-                                </constraints>
-                                <state key="normal" title="To know about projects we are working on click here.">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" red="0.95289999999999997" green="0.44308558819999999" blue="0.21564127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Pvw-oB-mCf"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="350" placeholderIntrinsicHeight="200" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TxH-GD-Anc" propertyAccessControl="none">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="350" placeholderIntrinsicHeight="200" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="TxH-GD-Anc" propertyAccessControl="none">
                                 <rect key="frame" x="10" y="125" width="355" height="200"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.65817636986301364" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">We are a full-lifecycle software development company that combines Experience Design, Complex Engineering, and Agile Delivery to give you the best software product in the shortest time. Our design-led approach enables us to be a key partner in your Digital transformation strategy. Not only can we build it, our top-tier brand strategists, ideation experts and UX designers can help you answer the question of what to build.</string>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <color key="highlightedColor" white="0.86151801220000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="shadowColor" white="0.86151801220000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="0.0" height="0.29999999999999999"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zK-WN-gqB">
+                                <rect key="frame" x="16" y="414" width="343" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="WT3-I0-3yW"/>
+                                </constraints>
+                                <state key="normal" title="Projects" backgroundImage="button-1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.95289999999999997" green="0.44308558819999999" blue="0.21564127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="projectbutton" destination="tLO-ul-k9I" eventType="touchUpInside" id="hft-pG-kIG"/>
+                                    <action selector="projectbutton:" destination="tLO-ul-k9I" eventType="touchUpInside" id="Q1x-5p-Bw7"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="pIe-WJ-5Oa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="68K-RY-A5H" secondAttribute="bottom" id="1DY-GW-Bal"/>
                             <constraint firstItem="1zK-WN-gqB" firstAttribute="top" secondItem="TxH-GD-Anc" secondAttribute="bottom" constant="40" id="2vN-13-Yun"/>
                             <constraint firstItem="5A4-QB-Grv" firstAttribute="top" secondItem="JOm-Mt-B9Q" secondAttribute="topMargin" constant="65" id="4Wh-15-MQu"/>
-                            <constraint firstItem="5A4-QB-Grv" firstAttribute="centerX" secondItem="TxH-GD-Anc" secondAttribute="centerX" id="9BP-EI-SzB"/>
                             <constraint firstItem="68K-RY-A5H" firstAttribute="leading" secondItem="JOm-Mt-B9Q" secondAttribute="leading" id="FcF-GV-OWT"/>
                             <constraint firstAttribute="trailing" secondItem="TxH-GD-Anc" secondAttribute="trailing" constant="10" id="IVv-qT-EIA"/>
                             <constraint firstItem="68K-RY-A5H" firstAttribute="top" secondItem="JOm-Mt-B9Q" secondAttribute="top" id="MVY-fF-DO6"/>
+                            <constraint firstItem="5A4-QB-Grv" firstAttribute="centerX" secondItem="68K-RY-A5H" secondAttribute="centerX" id="amN-SO-Nc8"/>
                             <constraint firstItem="TxH-GD-Anc" firstAttribute="leading" secondItem="JOm-Mt-B9Q" secondAttribute="leading" constant="10" id="cda-tW-Qlc"/>
                             <constraint firstAttribute="trailing" secondItem="68K-RY-A5H" secondAttribute="trailing" id="e0z-pz-psw"/>
                             <constraint firstItem="1zK-WN-gqB" firstAttribute="leading" secondItem="JOm-Mt-B9Q" secondAttribute="leading" constant="16" id="eOI-Rb-EXV"/>
                             <constraint firstAttribute="trailing" secondItem="1zK-WN-gqB" secondAttribute="trailing" constant="16" id="qpd-4G-z49"/>
                             <constraint firstItem="TxH-GD-Anc" firstAttribute="top" secondItem="5A4-QB-Grv" secondAttribute="bottom" constant="10" id="uSj-nG-oiG"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="82w-VI-UNs"/>
                     </view>
                     <navigationItem key="navigationItem" title="GLOBALLOGIC INDIA" id="5W7-9V-oX2">
                         <barButtonItem key="backBarButtonItem" title="Back" id="9cT-mV-f8L"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xD4-Mo-VQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tLO-ul-k9I" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-960.79999999999995" y="-162.3688155922039"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="assignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TableViewApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,7 +99,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.68791665999999996" blue="0.43904743210000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActorCell" rowHeight="60" id="o89-Nu-K6v" customClass="ActorCell" customModule="assignment" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActorCell" rowHeight="60" id="o89-Nu-K6v" customClass="ActorCell" customModule="TableViewApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o89-Nu-K6v" id="vYq-Ah-XCE">
@@ -154,7 +161,7 @@
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GlobalLogic Projects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6M-lj-phj">
                                 <rect key="frame" x="0.0" y="74" width="375" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.68791666002627161" blue="0.43904743205360397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.95289999999999997" green="0.44308558819999999" blue="0.21564127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="jep-a7-GM1"/>
                                 </constraints>
@@ -199,11 +206,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2k-or-CA6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1660" y="-162"/>
+            <point key="canvasLocation" x="-1746" y="-162"/>
         </scene>
     </scenes>
     <resources>
         <image name="GlobalLogic-Guide-1-Gartner (1)" width="496" height="537"/>
         <image name="GlobalLogic-Logo-Gray" width="521" height="167"/>
+        <image name="button-1" width="630" height="394"/>
     </resources>
 </document>

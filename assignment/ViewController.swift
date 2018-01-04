@@ -6,7 +6,10 @@
 //  Copyright © 2017 Ayush Varshney. All rights reserved.
 
 import UIKit
+import Foundation
 
+
+var ImageCache=[URL:UIImage]()
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     final let url = URL(string: "http://www.json-generator.com/api/json/get/bUCKtZvePS?indent=2")
@@ -14,12 +17,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     private var actors = [Actor]()
     @IBOutlet var tableView: UITableView!
     
-    
+    @IBAction func projectbutton() {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.layer.borderColor = UIColor.black.cgColor
         tableView.layer.borderWidth = 2.0
+        
         
         
         DispatchQueue.global(qos : .userInteractive).async {
@@ -67,6 +73,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
         if let imageURL = URL(string: actors[indexPath.row].image) {
+            if let image=ImageCache[imageURL]{
+                cell.imgView.image=image
+            }
+            else{
             DispatchQueue.global().async {
                 let data = try? Data(contentsOf: imageURL)
                 if let data = data {
@@ -74,11 +84,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     DispatchQueue.main.async {
                         cell.imgView.image = image
                     }
+                    
+                }
                 }
             }
         }
         cell.nameLbl.text = /*"Name: " +*/ actors[indexPath.row].name
         cell.DOBLbl.text = /*"Description: " +*/ actors[indexPath.row].description
+        print("Hello WOrld")
+        print(ImageCache)
         
         
         
